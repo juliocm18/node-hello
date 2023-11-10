@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="./powerbizz.logo.webp" alt="Logo" width="80%">
+    <img src="tivity-logo.png" alt="Logo" width="80%">
 </p>
 
 # Backend Project
