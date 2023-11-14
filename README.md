@@ -31,12 +31,6 @@
       </ul>
     </li>
     <li>
-      <a href="#configure-ngrock">Configure Ngrock</a>
-    </li>
-    <li>
-      <a href="#locust-deploy">Locust Deploy</a>
-    </li>
-    <li>
       <a href="#documentation">Documentation</a>
       <ul>
         <li><a href="#swagger">Swagger</a></li>
@@ -155,8 +149,8 @@ Swagger documentation can be accessed running the application locally and naviga
 
 - [SW Standards & Best Practices](#)
 - [Branching strategy](#)
-- [PR Template](./pull-request.md)
+- [PR Template](./pr-template.md)
 
 ## Contact
 
-Author: Amazing **PowerBizz** Team
+Author: Amazing **Sweatworks** Team
