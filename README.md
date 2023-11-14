@@ -147,8 +147,10 @@ Swagger documentation can be accessed running the application locally and naviga
 
 ## Team's standards
 
-- [SW Standards & Best Practices](#)
-- [Branching strategy](#)
+- [SW Standards & Best Practices](https://docs.google.com/document/d/14p8Jd78vqCbDqGCFUqe81_baW2XkRSi37J9RKXJnrU8/edit?usp=sharing)
+- [Git Workflow](https://sweatworks.atlassian.net/l/cp/9T6NPUs3)
+- [Branching Strategies](https://sweatworks.atlassian.net/l/cp/pJDxywma)
+- [Source Control Guidelines](https://sweatworks.atlassian.net/l/cp/UaGwkGzH)
 - [PR Template](./pr-template.md)
 
 ## Contact
