@@ -53,51 +53,54 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 ### Built With
 
 - [NodeJS](https://nodejs.org/es/)
-- [Express](https://expressjs.com/)
-- [TypeORM](https://typeorm.io/)
+- [Pulumi](https://www.pulumi.com/)
+- [Prisma](https://www.prisma.io/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Docker](https://www.docker.com/)
 - [Swagger](https://swagger.io/)
+- [Jest](https://jestjs.io/)
+- [Json Web Token](https://jwt.io/)
 
 ## Getting Started
 
 ### Prerequisites
 In order to run the application you must have the following tools installed:
 
-- **Node 16.20.0 LTS**, in case you don't have it you can follow the instructions to install it with [NVM](https://github.com/nvm-sh/nvm)
+- **Node 16.x LTS**, in case you don't have it you can follow the instructions to install it with [NVM](https://github.com/nvm-sh/nvm)
 
 - **Docker and docker-compose**, in case you don't have it you can follow the [instructions to install](https://docs.docker.com/engine/install/)
 
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo with token
+   
    ```sh
-    git clone https://github.com/VentaFazil/powerbizz-server.git
+    git clone https://{githubUser}:{token}@github.com/SweatWorks/revenue-cycle-api.git  
+   ```
+   
+3. Locate in the project folder
+
+   ```sh
+    cd revenue-cycle-api/
    ```
 
-2. Locate in the project folder
+4. copy the example.env file to a new file called .env and update the env variable values.
 
+
+5. Install project dependencies
    ```sh
-    cd powerbizz-server/
+    yarn install
    ```
 
-3. copy the example.env file to a new file called .env and update the env variable values.
-
-
-4. Install project dependencies
-   ```sh
-    npm install
-   ```
-
-5. Run the database migrations
+6. Run the database migrations
     ```sh
     npm run migration:local:run
    ```
 
-6. Start the api in development mode
+7. Start the api in development mode
    ```sh
-    npm run dev
+    yarn run dev
    ```
 
 ## Usage
@@ -107,35 +110,20 @@ In order to run the application you must have the following tools installed:
 Inside of the application you will find a src folder with the following structure:
     
     src
-    ├── bootstrap
-    ├── core
-    │   ├── config
-    │   ├── exceptions
-    │   ├── infraestructure
-    │   │   ├── aws
+    ├── docs
+    ├── packages
+    │   ├── database
+    │   ├── get-health
+    │   ├── ingest-s3-data
+    │   ├── ingest-s3-data
+    ├── app.ts
+    ├── index.ts
+        │   │   ├── aws
     │   │   ├── encrypt
     │   │   ├── middleware
     │   │   ├── typeorm
     │   │   ├── http    
     │   │   ├── presentation
-    ├── database
-    │   ├── seeds
-    ├── documentation
-    ├── lambda
-    ├── migrations
-    ├── modules
-    │   ├── {ModuleName}
-    │   │   ├── application
-    │   │   ├── docs
-    │   │   ├── domain
-    │   │   │   ├── irepository
-    │   │   │   ├── model
-    │   │   ├── infraestructure
-    │   │   │   ├── dto
-    │   │   │   ├── entities
-    │   │   │   ├── presentation
-    ├── app.ts
-    ├── index.ts
 
 
 ### Migrations
